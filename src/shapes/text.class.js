@@ -869,7 +869,7 @@
           stylesAreEqual = fontDeclaration === previousFontDeclaration, width, coupleWidth, previousWidth,
           fontMultiplier = charStyle.fontSize / CACHE_FONT_SIZE, kernedWidth;
 
-      if (previousChar && fontCache[previousChar]) {
+      if (previousChar && fontCache[previousChar] !== undefined) {
         previousWidth = fontCache[previousChar];
       }
       if (fontCache[_char]) {
